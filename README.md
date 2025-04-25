@@ -1,27 +1,94 @@
-# DatabasedWebApp
+# 📦 Datenbankbasierte Webanwendung (MySQL + Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.16.
+Dies ist eine Webanwendung, die im Rahmen des Kurses **„Datenbankbasierte Webanwendung“** entwickelt wurde. Die Anwendung basiert auf einer MySQL-Datenbank im Backend und verwendet Angular für das Frontend.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📑 Projektübersicht
 
-## Code scaffolding
+Ziel ist die Entwicklung einer voll funktionsfähigen datenbankgestützten Webanwendung mit CRUD-Funktionalitäten, Authentifizierung und sauberer Trennung zwischen Frontend und Backend.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚧 Projektphasen
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 1. Anforderungsanalyse
+- Definition der Zielgruppe und der Use Cases
+- Erhebung funktionaler und nicht-funktionaler Anforderungen
+- Erstellung eines Anforderungskatalogs
 
-## Running unit tests
+### 2. Konzeption & Architektur
+- Entwurf des Datenmodells (ER-Diagramm, relationale Tabellenstruktur)
+- Aufteilung in Frontend (Angular), Backend (z. B. Node.js/Spring), Datenbank (MySQL)
+- Definition von REST-API-Endpunkten
+- Sicherheitskonzept (z. B. Authentifizierung, Rollen)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 3. Datenbankdesign (MySQL)
+- Tabellenstruktur mit Primär- und Fremdschlüsseln
+- Normalisierung der Datenbank
+- SQL-Skripte zur Erstellung & Initialbefüllung
+- Performance-Optimierung (Indexes, Views)
 
-## Running end-to-end tests
+### 4. Backend-Implementierung
+- Aufbau der REST-API
+- CRUD-Logik für alle Ressourcen
+- Verbindung zur MySQL-Datenbank
+- Authentifizierungs- & Autorisierungssystem (JWT, Bcrypt)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 5. Frontend-Implementierung (Angular)
+- Aufbau der Angular-Komponentenstruktur
+- Anbindung an die REST-API mit `HttpClient`
+- Benutzeroberfläche mit Formularen & Validierung
+- Authentifizierte Routen & Guards
+- Responsives UI mit Angular Material/Bootstrap
 
-## Further help
+### 6. Testphase
+- Unit-Tests (Frontend & Backend)
+- Integrationstests
+- Datenbanktests (z. B. Constraints, Query-Tests)
+- Manuelles UI-Testing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 7. Deployment
+- Build-Prozesse (Angular + Backend)
+- Bereitstellung auf Webserver / Docker / lokal
+- Konfiguration von Umgebungsvariablen & Sicherheitseinstellungen
+- Optional: Hosting auf Plattformen wie Vercel, Firebase, Render, etc.
+
+### 8. Dokumentation & Präsentation
+- Projektdokumentation (PDF/Markdown)
+- API-Dokumentation (OpenAPI/Postman)
+- Anleitung zur lokalen Ausführung
+- Präsentation/Demo für Stakeholder oder Bewertung
+
+---
+
+## ⚙️ Technologien
+
+| Bereich    | Technologie       |
+|-----------|-------------------|
+| Frontend  | Angular            |
+| Backend   | Node.js / Spring Boot *(je nach Projekt)* |
+| Datenbank | MySQL              |
+| Auth      | JWT / Bcrypt       |
+| Tools     | Postman, Git, Docker, VS Code |
+
+---
+
+## 🛠️ Lokale Installation
+
+```bash
+# 1. Repo klonen
+git clone https://github.com/DEINUSERNAME/dein-projekt.git
+
+# 2. Frontend starten
+cd frontend
+npm install
+ng serve
+
+# 3. Backend starten
+cd backend
+npm install
+npm start
+
+# 4. MySQL-DB vorbereiten
+# Importiere das SQL-Skript aus /database/init.sql
