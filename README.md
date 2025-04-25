@@ -66,11 +66,6 @@ Ziel ist die Entwicklung einer voll funktionsfähigen datenbankgestützten Weban
 
 | Bereich    | Technologie       |
 |-----------|-------------------|
-| Frontend  | Angular            |
-| Backend   | Node.js / Spring Boot *(je nach Projekt)* |
-| Datenbank | MySQL              |
-| Auth      | JWT / Bcrypt       |
-| Tools     | Postman, Git, Docker, VS Code |
 
 ---
 
