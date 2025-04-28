@@ -206,7 +206,7 @@ Die Anforderungen werden **zuerst nach Themenbereichen gruppiert** und anschlie�
 - **Beziehungen**:
   - Eine Abteilung **hat mehrere Termine** und **mehrere Beiträge**.
 
-5. **Foren**
+5. **Foren**(Optional)
 - **Attribute**: ID, Name, Abteilung-ID, Erstellungsdatum.
 - **Beziehungen**:
   - Ein Forum **gehört zu einer Abteilung**.
