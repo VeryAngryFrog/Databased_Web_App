@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../core/services/auth.service';
 
+import {NgIf} from "@angular/common";
+
 @Component({
   selector: 'app-navbar',
+  imports: [NgIf],
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {

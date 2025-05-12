@@ -19,7 +19,7 @@ Ziel ist die Entwicklung einer voll funktionsfähigen datenbankgestützten Weban
 
 ### 2. Konzeption & Architektur
 - Entwurf des Datenmodells (ER-Diagramm, relationale Tabellenstruktur)
-- Aufteilung in Frontend (Angular), Backend (z. B. Node.js/Spring), Datenbank (MySQL)
+- Aufteilung in Frontend (Angularv19), Backend (z. B. Node.js/Spring), Datenbank (MySQL)
 - Definition von REST-API-Endpunkten
 - Sicherheitskonzept (z. B. Authentifizierung, Rollen)
 
