@@ -1,19 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-<<<<<<< Updated upstream
+import { LoginComponent } from './login/login.component';
 import {NavbarComponent} from "./navbar/navbar.component";
 
-
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, NavbarComponent],
-=======
-import { LoginComponent } from './login/login.component';
-
-@Component({
-    selector: 'app-root',
-    imports: [RouterOutlet, LoginComponent],
->>>>>>> Stashed changes
+    imports: [RouterOutlet, LoginComponent, NavbarComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })
