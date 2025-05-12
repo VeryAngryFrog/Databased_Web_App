@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/">🏹 Schützenverein Huchting</a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+    <li><a routerLink="/termine" routerLinkActive="active">Termine</a></li>
+    <li><a routerLink="/forum" routerLinkActive="active">Forum</a></li>
+
+    <!-- Nur sichtbar wenn angemeldet -->
+    <ng-container *ngIf="isLoggedIn">
+      <li><a routerLink="/profile" routerLinkActive="active">Profil</a></li>
+
+      <!-- Admin-Link -->
+      <li *ngIf="isAdmin"><a routerLink="/dashboard/admin" routerLinkActive="active">Admin</a></li>
+
+      <!-- Abteilungsleiter-Link -->
+      <li *ngIf="isLeader"><a routerLink="/dashboard/leiter" routerLinkActive="active">Leiter-Dashboard</a></li>
+
+      <li><a (click)="logout()">Logout</a></li>
+    </ng-container>
+
+    <!-- Wenn nicht angemeldet -->
+    <ng-container *ngIf="!isLoggedIn">
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="/register" routerLinkActive="active">Registrieren</a></li>
+    </ng-container>
+  </ul>
+</nav>
