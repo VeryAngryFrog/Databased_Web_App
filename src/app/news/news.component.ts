@@ -3,11 +3,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 
 @Component({
-  selector: 'app-reset-password',
+  selector: 'app-news',
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
-  templateUrl: './reset-password.component.html',
-  styleUrl: './reset-password.component.css'
+  templateUrl: './news.component.html',
+  styleUrl: './news.component.css'
 })
-export class ResetPasswordComponent {
+export class NewsComponent {
 
 }
